@@ -49,6 +49,17 @@ class ExampleUnitTest {
         assertEquals(testPersonWithMiddle!!.lastName, "Last_With_Middle")
     }
 
+    @Test
+    @Throws(Exception::class)
+    fun changePersonNames() {
+        testPersonWithoutMiddle!!.firstName = "Changed_First"
+        testPersonWithoutMiddle!!.secondName = "Changed_Middle"
+        testPersonWithoutMiddle!!.lastName = "Changed_Last"
+        assertEquals(testPersonWithoutMiddle!!.firstName, "Changed_First")
+        assertEquals(testPersonWithoutMiddle!!.secondName, "Changed_Middle")
+        assertEquals(testPersonWithoutMiddle!!.lastName, "Changed_Last")
+    }
+
     //Group data tests
     @Test
     @Throws(Exception::class)

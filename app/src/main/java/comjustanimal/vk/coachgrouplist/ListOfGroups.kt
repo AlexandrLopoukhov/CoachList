@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.RecyclerView.Adapter
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import android.view.View
 import android.view.Menu
 import android.view.MenuItem
@@ -34,7 +35,9 @@ class ListOfGroups : AppCompatActivity() {
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
         fab.setOnClickListener {
+            Log.d(this.javaClass.name, "Will be switched to add group screen")
             startActivity<AddGroupActivity>()
+            Log.d(this.javaClass.name, "Switched")
         }
     }
 

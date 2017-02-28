@@ -14,8 +14,9 @@ class AddGroupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_group)
         add_group_button.setOnClickListener {
+            Log.d(this.javaClass.name, "New group will be added to GroupServant")
             GroupServant.containerList.add(Group(add_group_editText.text.toString()))
-            Log.d(javaClass.toString(), "group added")
+            Log.d(this.javaClass.name, "Added")
             startActivity<ListOfGroups>()
         }
     }

@@ -15,12 +15,12 @@ import comjustanimal.vk.coachgrouplist.R.layout.group_item
 import comjustanimal.vk.coachgrouplist.model.Group
 import java.util.*
 import org.jetbrains.anko.*
-import comjustanimal.vk.coachgrouplist.utils.Layout
+
 
 /**
  * Created by admin on 2/28/2017.
  */
-class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapter<ListOfGroupsAdapter.ViewHolder>() {
+class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapter<ListOfGroupsAdapter.ViewHolder>(), AnkoLogger {
     var mContainerList: ArrayList<Group> = containerList
     override fun getItemCount(): Int {
         return mContainerList.size

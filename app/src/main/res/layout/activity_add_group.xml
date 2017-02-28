@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_add_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comjustanimal.vk.coachgrouplist.AddGroupActivity">
+
+    <TextView
+        android:text="@string/add_group_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_group_textView"
+        android:layout_margin="16dp"
+        android:layout_weight="0.2" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/add_group_editView"
+        android:layout_margin="16dp"
+        android:id="@+id/add_group_editText"
+        android:layout_weight="0.3" />
+
+    <Button
+        android:text="@string/add_group_button"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/add_group_button"
+        android:layout_weight="0.5"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar
 import android.view.View
 import android.view.Menu
 import android.view.MenuItem
+import org.jetbrains.anko.startActivity
 
 class ListOfGroups : AppCompatActivity() {
 
@@ -18,10 +19,7 @@ class ListOfGroups : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+        fab.setOnClickListener { startActivity<AddGroupActivity>() }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

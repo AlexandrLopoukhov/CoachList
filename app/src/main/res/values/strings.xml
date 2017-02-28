@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Coach group list</string>
     <string name="action_settings">Settings</string>
+    <string name="add_group_textView">Add a group</string>
+    <string name="add_group_editView">Print group name here</string>
+    <string name="add_group_button">ADD</string>
 </resources>

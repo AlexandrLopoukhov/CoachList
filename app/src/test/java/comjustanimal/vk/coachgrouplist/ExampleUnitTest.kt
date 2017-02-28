@@ -64,9 +64,9 @@ class ExampleUnitTest {
     @Test
     @Throws(Exception::class)
     fun readPersonFromGroup() {
-        testGroup!!.personList.add(Person("First", "Last"))
-        assertEquals(testGroup!!.personList.size, 1)
-        assertEquals(testGroup!!.personList.get(0).firstName, "First")
+        testGroup!!.personList.containerList.add(Person("First", "Last"))
+        assertEquals(testGroup!!.personList.containerList.size, 1)
+        assertEquals(testGroup!!.personList.containerList.get(0).firstName, "First")
 
     }
 

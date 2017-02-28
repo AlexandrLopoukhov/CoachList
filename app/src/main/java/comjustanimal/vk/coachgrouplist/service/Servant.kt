@@ -8,8 +8,8 @@ interface Servant {
 
     fun getAll(): List<Any>
     fun edit()
-    fun add(placeholder: Any)
-    fun isContain(what: Any): Boolean
+    fun delete(what: Any)
+    fun isContains(what: Any): Boolean
 
 
 }

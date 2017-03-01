@@ -10,7 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import comjustanimal.vk.coachgrouplist.R
-import comjustanimal.vk.coachgrouplist.R.id.group_item_textView
+
+import comjustanimal.vk.coachgrouplist.R.id.group_item_name_textView
+import comjustanimal.vk.coachgrouplist.R.id.group_item_number_of_members_textView
 import comjustanimal.vk.coachgrouplist.R.layout.group_item
 import comjustanimal.vk.coachgrouplist.model.Group
 import java.util.*
@@ -27,7 +29,8 @@ class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapte
     }
 
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        holder?.groupItemTextView?.setText(mContainerList.get(position).groupName)
+        holder!!.groupItemNameTextView!!.setText(mContainerList.get(position).groupName)
+        holder!!.groupItemNumberOfMembers!!.setText(mContainerList.get(position).personList.containerList.size)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
@@ -35,7 +38,8 @@ class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapte
     }
 
     class ViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
-        val groupItemTextView: TextView = itemView!!.find(group_item_textView)
+        val groupItemNameTextView: TextView = itemView!!.find(group_item_name_textView)
+        val groupItemNumberOfMembers: TextView = itemView!!.find(group_item_number_of_members_textView)
     }
 
 

@@ -30,7 +30,7 @@ class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
         holder!!.groupItemNameTextView!!.setText(mContainerList.get(position).groupName)
-        holder!!.groupItemNumberOfMembers!!.setText(mContainerList.get(position).personList.containerList.size)
+        holder!!.groupItemNumberOfMembers!!.setText(mContainerList.get(position).personList.containerList.size.toString())
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {

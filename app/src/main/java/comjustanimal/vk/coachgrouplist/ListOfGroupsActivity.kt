@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.content_list_of_groups.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toolbar
 
-class ListOfGroups : AppCompatActivity() {
+class ListOfGroupsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

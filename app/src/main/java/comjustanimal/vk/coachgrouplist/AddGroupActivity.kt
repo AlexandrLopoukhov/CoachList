@@ -17,7 +17,7 @@ class AddGroupActivity : AppCompatActivity() {
             Log.d(this.javaClass.name, "New group will be added to GroupServant")
             GroupServant.containerList.add(Group(add_group_editText.text.toString()))
             Log.d(this.javaClass.name, "Added")
-            startActivity<ListOfGroups>()
+            startActivity<ListOfGroupsActivity>()
         }
     }
 }

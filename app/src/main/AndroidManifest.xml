@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".AddGroupActivity">
         </activity>
+        <activity android:name=".AddPersonActivity">
+        </activity>
     </application>
 
 </manifest>

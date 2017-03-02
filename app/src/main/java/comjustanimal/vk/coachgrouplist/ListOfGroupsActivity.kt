@@ -5,13 +5,11 @@ import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.RecyclerView.Adapter
-import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.View
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import comjustanimal.vk.coachgrouplist.R.layout.activity_list_of_groups
 import comjustanimal.vk.coachgrouplist.adapter.ListOfGroupsAdapter
 import comjustanimal.vk.coachgrouplist.service.GroupServant
@@ -20,7 +18,11 @@ import kotlinx.android.synthetic.main.content_list_of_groups.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toolbar
 
-class ListOfGroupsActivity : AppCompatActivity() {
+class ListOfGroupsActivity : AppCompatActivity(), ListOfGroupsAdapter.ListItemClickListener {
+    override fun onListItemClick(clickedItemIndex: Int) {
+        //startActivity<AddPersonActivity>()
+        Toast.makeText(this, "Clicked item " + clickedItemIndex, Toast.LENGTH_SHORT).show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

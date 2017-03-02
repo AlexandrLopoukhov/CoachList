@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddGroupActivity">
+        <activity android:name=".AddGroupActivity"
+            android:label="Add Group">
         </activity>
-        <activity android:name=".AddPersonActivity">
+        <activity android:name=".AddPersonActivity"
+            android:label="Add Person">
         </activity>
     </application>
 

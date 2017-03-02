@@ -18,11 +18,7 @@ import kotlinx.android.synthetic.main.content_list_of_groups.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toolbar
 
-class ListOfGroupsActivity : AppCompatActivity(), ListOfGroupsAdapter.ListItemClickListener {
-    override fun onListItemClick(clickedItemIndex: Int) {
-        //startActivity<AddPersonActivity>()
-        Toast.makeText(this, "Clicked item " + clickedItemIndex, Toast.LENGTH_SHORT).show()
-    }
+class ListOfGroupsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

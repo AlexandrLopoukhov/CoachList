@@ -42,7 +42,6 @@ class ListOfGroupsAdapter(containerList: ArrayList<Group>) : RecyclerView.Adapte
         var v: View = LayoutInflater.from(parent!!.context).inflate(group_item, parent, false)
         var vh: ListOfGroupsAdapter.ViewHolder = ViewHolder(v, (object : ListOfGroupsAdapter.ListItemClickListener {
             override fun onListItemClick(clickedItemIndex: Int) {
-                Log.d("adapter", "item clicked")
                 parent.context.startActivity<AddPersonActivity>()
             }
         }))
